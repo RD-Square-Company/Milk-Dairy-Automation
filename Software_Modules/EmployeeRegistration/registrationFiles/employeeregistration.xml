@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE employeeinfo>
+<LD0001>
+ <E1 id="1">
+  <adhaar>123456789012</adhaar>
+  <name>
+   <first>Dashrath</first>
+   <middle/>
+   <last>Dangi</last>
+  </name>
+  <contact>
+   <primary>9993621661</primary>
+   <secondary/>
+  </contact>
+  <address>
+   <street>sagor</street>
+   <city>sitamau</city>
+   <state>Madhya Pradesh</state>
+   <pincode>458389</pincode>
+  </address>
+  <email>dangidashrath420@gmail.com</email>
+  <dojoin>2018-07-03</dojoin>
+  <dob>1997-12-15</dob>
+  <qualification>High school to 12th</qualification>
+  <salary>10000</salary>
+  <department>
+   <depid>A4</depid>
+   <designation>Worker</designation>
+  </department>
+ </E1>
+ <E2 id="1">
+  <adhaar>465154585158</adhaar>
+  <name>
+   <first>Another</first>
+   <middle/>
+   <last>Employee</last>
+  </name>
+  <contact>
+   <primary>7568577487</primary>
+   <secondary/>
+  </contact>
+  <address>
+   <street>jk lakshmipat university</street>
+   <city>jaipur</city>
+   <state>Rajasthan</state>
+   <pincode>302026</pincode>
+  </address>
+  <email>rdsquare144@gmail.com</email>
+  <dojoin>2018-07-03</dojoin>
+  <dob>2000-01-01</dob>
+  <qualification>some college, no degree</qualification>
+  <salary>6000</salary>
+  <department>
+   <depid>A1</depid>
+   <designation>changed</designation>
+  </department>
+  <bankinfo>
+   <B18 id="661444">
+    <noa>ANY UPI</noa>
+    <actype>UPI Number</actype>
+    <bankname>SBI</bankname>
+    <ifsc/>
+    <branch/>
+    <cvv/>
+    <expdate/>
+   </B18>
+  </bankinfo>
+ </E2>
+ <E3 id="1">
+  <adhaar>455854862245</adhaar>
+  <name>
+   <first>Testing</first>
+   <middle>On</middle>
+   <last>NewHead</last>
+  </name>
+  <contact>
+   <primary>7568577487</primary>
+   <secondary/>
+  </contact>
+  <address>
+   <street>jk</street>
+   <city>jaipur</city>
+   <state>Rajasthan</state>
+   <pincode>302026</pincode>
+  </address>
+  <email>rdsquare144@gmail.com</email>
+  <dojoin>2018-07-03</dojoin>
+  <dob>2000-01-01</dob>
+  <qualification>High school to 10th</qualification>
+  <salary>4510.11</salary>
+  <department>
+   <depid>A3</depid>
+   <designation>Worker</designation>
+  </department>
+ </E3>
+ <E4 id="1">
+  <adhaar>547557235574</adhaar>
+  <name>
+   <first>aone</first>
+   <middle>dep</middle>
+   <last>testing</last>
+  </name>
+  <contact>
+   <primary>9993621661</primary>
+   <secondary/>
+  </contact>
+  <address>
+   <street>jk lakshmipat university</street>
+   <city>jaipur</city>
+   <state>Rajasthan</state>
+   <pincode>302026</pincode>
+  </address>
+  <email>rdsquare144@gmail.com</email>
+  <dojoin>2018-07-03</dojoin>
+  <dob>2000-01-01</dob>
+  <qualification>High school to 12th</qualification>
+  <salary>10000</salary>
+  <department>
+   <depid>A1</depid>
+   <designation>HOD</designation>
+  </department>
+  <bankinfo>
+   <B19 id="54012440">
+    <noa>ANONYMUS TESTING</noa>
+    <actype>UPI Number</actype>
+    <bankname>HDFC BANK</bankname>
+    <ifsc/>
+    <branch/>
+    <cvv/>
+    <expdate/>
+   </B19>
+  </bankinfo>
+ </E4>
+ <E5 id="1">
+  <adhaar>212225131456</adhaar>
+  <name>
+   <first>Anonymus</first>
+   <middle></middle>
+   <last>Employee</last>
+  </name>
+  <contact>
+   <primary>9993621661</primary>
+   <secondary></secondary>
+  </contact>
+  <address>
+   <street>jk lakshmipat university</street>
+   <city>jaipur</city>
+   <state>Rajasthan</state>
+   <pincode>302026</pincode>
+  </address>
+  <email>rdsquare144@gmail.com</email>
+  <dojoin>2018-07-04</dojoin>
+  <dob>2000-01-01</dob>
+  <qualification>some college, no degree</qualification>
+  <salary>4500</salary>
+  <department>
+   <depid>A2</depid>
+   <designation>Worker</designation>
+  </department>
+  <bankinfo>
+   <B21 id="44551005400">
+    <noa>RAHUL DANGI</noa>
+    <actype>UPI Number</actype>
+    <bankname>HDFC BANK MANDSAUR</bankname>
+    <ifsc></ifsc>
+    <branch></branch>
+    <cvv></cvv>
+    <expdate></expdate>
+   </B21>
+  </bankinfo>
+ </E5>
+</LD0001>

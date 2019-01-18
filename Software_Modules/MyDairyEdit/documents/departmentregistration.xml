@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE departmentinfo>
+<LD0001>
+ <A1>
+  <depname>No Any Department</depname>
+  <mangid>4</mangid>
+  <description>This is no department.</description>
+ </A1>
+ <A2>
+  <depname>Another Department</depname>
+  <mangid/>
+  <description>This is different department.</description>
+ </A2>
+ <A3>
+  <depname>Testing</depname>
+  <mangid>3</mangid>
+  <description>This is department will test designation.</description>
+ </A3>
+ <A4>
+  <depname>master checking</depname>
+  <mangid/>
+  <description>This is another department with highly updated.</description>
+ </A4>
+</LD0001>

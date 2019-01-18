@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/media/rd_square/Important/Qt projects/MyDetail">
+        <file>detailDoc/loading.gif</file>
+    </qresource>
+</RCC>

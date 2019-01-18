@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE additionalcustlog>
+<LD0001>
+ <aDEFAULT>
+  <d2018-08-08/>
+  <d2019-01-18>
+   <s1 iskg="1" animal="Mix" curDateTime="2019-01-18 12:59:25">
+    <quantity>56</quantity>
+    <price>35</price>
+   </s1>
+  </d2019-01-18>
+ </aDEFAULT>
+ <a7568577487>
+  <d2018-08-08/>
+ </a7568577487>
+ <a8787767667>
+  <d2019-01-18>
+   <s1 iskg="1" animal="Mix" curDateTime="2019-01-18 12:58:15">
+    <quantity>3</quantity>
+    <price>35</price>
+   </s1>
+  </d2019-01-18>
+ </a8787767667>
+ <a4534345353>
+  <d2019-01-18>
+   <s1 iskg="1" curDateTime="2019-01-18 13:02:17" animal="Mix">
+    <quantity>3</quantity>
+    <price>35</price>
+   </s1>
+  </d2019-01-18>
+ </a4534345353>
+</LD0001>

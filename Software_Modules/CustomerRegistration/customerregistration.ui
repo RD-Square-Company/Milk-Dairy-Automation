@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomerRegistration</class>
+ <widget class="QWidget" name="CustomerRegistration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>490</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>490</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>490</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>11</y>
+     <width>481</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;center&gt;&lt;p&gt;Customer Registration Form&lt;/p&gt;&lt;/center&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>39</y>
+     <width>481</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="Line" name="hline">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="nameLayout">
+      <item>
+       <widget class="QLabel" name="nameLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;p align=&quot;center&quot;&gt;&lt;b&gt;Name: &lt;font color=&quot;red&quot;&gt;*&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>18</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="firstNameEdit">
+        <property name="placeholderText">
+         <string>First Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>17</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="middleNameEdit">
+        <property name="placeholderText">
+         <string>Middle Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>17</width>
+          <height>13</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lastNameEdit">
+        <property name="placeholderText">
+         <string>Last Name</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="adhaarLayout">
+      <item>
+       <widget class="QLabel" name="adhaarLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;b&gt;&lt;p align=&quot;center&quot;&gt;Adhaar No: &lt;font color=&quot;red&quot;&gt;*&lt;/font&gt;&lt;/p&gt;&lt;/b&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>18</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ad1Label">
+        <property name="placeholderText">
+         <string>2345</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;p align=&quot;left&quot;&gt;&lt;b&gt;-&lt;/b&gt;&lt;/p&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ad2Edit">
+        <property name="placeholderText">
+         <string>4635</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;p align=&quot;left&quot;&gt;&lt;b&gt;-&lt;/b&gt;&lt;/p&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ad3Edit">
+        <property name="placeholderText">
+         <string>9385</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="pContactLayout">
+      <item>
+       <widget class="QLabel" name="pContactLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;b&gt;&lt;p align=&quot;center&quot;&gt;Primary Contact :&lt;font color=&quot;red&quot;&gt;*&lt;/font&gt;	&lt;/p&gt;&lt;/b&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="buddy">
+         <cstring>pContactEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="pContactEdit">
+        <property name="placeholderText">
+         <string>Indian valid mobile no</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>158</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="sContactLayout">
+      <item>
+       <widget class="QLabel" name="sContactLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;b&gt;&lt;p align=&quot;center&quot;&gt;Secondary Contact:  &lt;/p&gt;&lt;/b&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="buddy">
+         <cstring>sContactEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sContactEdit">
+        <property name="placeholderText">
+         <string>Indian valid mobile no</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_10">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>158</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="emailLayout">
+      <item>
+       <widget class="QLabel" name="emailLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;b&gt;&lt;p align=&quot;center&quot;&gt;Email ID:	 &lt;/p&gt;&lt;/b&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="buddy">
+         <cstring>emailLayout_2</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="emailLayout_2">
+        <property name="placeholderText">
+         <string>Example: rdsquare144@gmail.com</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_12">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>158</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="addressLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="addressLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;b&gt;&lt;p align=&quot;center&quot;&gt;Address:  &lt;font color=&quot;red&quot;&gt;*&lt;/font&gt;&lt;/p&gt;&lt;/b&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLineEdit" name="line1Edit">
+          <property name="placeholderText">
+           <string>Line 1...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="line2Edit">
+          <property name="placeholderText">
+           <string>Line 2...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QComboBox" name="stateBox">
+            <item>
+             <property name="text">
+              <string>Select State</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Andhra Pradesh</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Arunachal Pradesh</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Assam</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Bihar</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Chhattisgarh</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Goa</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Gujarat</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Haryana</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Himachal Pradesh</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Jammu &amp; Kashmir</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Jharkhand</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Karnataka</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Kerala</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Madhya Pradesh</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Maharashtra</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Manipur</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Meghalaya</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Mizoram</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nagaland</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Odisha</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Punjab</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Rajasthan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sikkim</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Tamil Nadu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Telangana</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Tripura</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Uttarakhand</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Uttar Pradesh</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>West Bengal</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="pincodeEdit">
+            <property name="placeholderText">
+             <string>Pincode</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="2">
+       <spacer name="horizontalSpacer_13">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>96</width>
+          <height>17</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="androiLayout">
+      <item>
+       <widget class="QLabel" name="androidLabel">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;p align=&quot;left&quot;&gt;Have personal android mobile ?  &lt;/p&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="buddy">
+         <cstring>androidBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="androidBox">
+        <item>
+         <property name="text">
+          <string>Yes</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>No</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_20">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>128</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="errorLabel">
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+color: green
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;p align=&quot;center&quot;&gt;All * fields are compulsary&lt;/p&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <spacer name="horizontalSpacer_21">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_22">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_23">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_24">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_25">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_26">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="nextButton">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>N&amp;ext &gt;&gt;</string>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+S</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+        <property name="default">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>firstNameEdit</tabstop>
+  <tabstop>middleNameEdit</tabstop>
+  <tabstop>lastNameEdit</tabstop>
+  <tabstop>ad1Label</tabstop>
+  <tabstop>ad2Edit</tabstop>
+  <tabstop>ad3Edit</tabstop>
+  <tabstop>pContactEdit</tabstop>
+  <tabstop>sContactEdit</tabstop>
+  <tabstop>emailLayout_2</tabstop>
+  <tabstop>line1Edit</tabstop>
+  <tabstop>line2Edit</tabstop>
+  <tabstop>stateBox</tabstop>
+  <tabstop>pincodeEdit</tabstop>
+  <tabstop>androidBox</tabstop>
+  <tabstop>nextButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

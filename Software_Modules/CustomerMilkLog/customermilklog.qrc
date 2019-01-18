@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/media/rd_square/Important/Qt projects/CustomerMilkLog/Images">
+        <file>Images/dir.gif</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/home/rdsquare">
+        <file>load1.png</file>
+    </qresource>
+</RCC>

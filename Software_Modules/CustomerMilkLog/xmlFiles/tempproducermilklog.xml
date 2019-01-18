@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE producermilklog>
+<LD0001>
+ <MP00010001>
+  <d2018-08-08/>
+  <d2018-08-15>
+   <s1 curdatetime="2018-08-15 17:06:14" milktypeid="3" iskg="1">
+    <quantity>5</quantity>
+    <fat>3</fat>
+    <snf>9</snf>
+    <price>40</price>
+    <water/>
+   </s1>
+  </d2018-08-15>
+  <d2018-09-14>
+   <s1 curdatetime="2018-09-14 12:13:54" iskg="1" milktypeid="3">
+    <quantity>4</quantity>
+    <fat>7</fat>
+    <snf>3</snf>
+    <price>40</price>
+    <water></water>
+   </s1>
+  </d2018-09-14>
+ </MP00010001>
+ <MP00010002>
+  <d2018-08-08/>
+ </MP00010002>
+</LD0001>

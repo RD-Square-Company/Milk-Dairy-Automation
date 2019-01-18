@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE customerinfo>
+<LD0001>
+ <MC00010001 id="N">
+  <adhaar>097990895434</adhaar>
+  <name>
+   <first>Salman</first>
+   <middle>Salman</middle>
+   <last>Khan</last>
+  </name>
+  <contact>
+   <primary>9823363023</primary>
+   <secondary>7568577487</secondary>
+  </contact>
+  <address>
+   <street>jk lakshmipat university</street>
+   <city>jaipur</city>
+   <state>Punjab</state>
+   <pincode>302026</pincode>
+  </address>
+  <email>rdsquare144@gmail.com</email>
+  <bankinfo>
+   <B12 id="073245143246">
+    <noa>SALLU BHAI</noa>
+    <actype>UPI Number</actype>
+    <bankname>HDFC BANK</bankname>
+    <ifsc/>
+    <branch/>
+    <cvv/>
+    <expdate/>
+   </B12>
+  </bankinfo>
+ </MC00010001>
+ <MC00010002 id="Y">
+  <adhaar>908778677786</adhaar>
+  <name>
+   <first>Ram</first>
+   <middle>Ram</middle>
+   <last>Dangi</last>
+  </name>
+  <contact>
+   <primary>9878878978</primary>
+   <secondary/>
+  </contact>
+  <address>
+   <street>sagor</street>
+   <city>sitamau</city>
+   <state>Madhya Pradesh</state>
+   <pincode>458389</pincode>
+  </address>
+  <email/>
+  <bankinfo>
+   <B16 id="74858752">
+    <noa>RAM SINGH DANGI</noa>
+    <actype>Bank Account</actype>
+    <bankname>HDFC BANK</bankname>
+    <ifsc>HDFC045514</ifsc>
+    <branch>MANDSAUR</branch>
+    <cvv/>
+    <expdate/>
+   </B16>
+  </bankinfo>
+ </MC00010002>
+ <MC00010003 id="Y">
+  <adhaar>451554172154</adhaar>
+  <name>
+   <first>Rahul</first>
+   <middle/>
+   <last>Dangi</last>
+  </name>
+  <contact>
+   <primary>7568577487</primary>
+   <secondary/>
+  </contact>
+  <address>
+   <street>jk lakshmipat university</street>
+   <city>jaipur</city>
+   <state>Rajasthan</state>
+   <pincode>302026</pincode>
+  </address>
+  <email>rdsquare144@gmail.com</email>
+  <bankinfo>
+   <B20 id="54548446546">
+    <noa>RAHUL DANGI</noa>
+    <actype>Bank Account</actype>
+    <bankname>HDFC BANK MANDSAUR</bankname>
+    <ifsc>HDFC0001541</ifsc>
+    <branch>CSCHEME MANDSAUR</branch>
+    <cvv/>
+    <expdate/>
+   </B20>
+  </bankinfo>
+ </MC00010003>
+ <MP00010001 id="Y">
+  <adhaar>890789078908</adhaar>
+  <name>
+   <first>Rahul</first>
+   <middle/>
+   <last>Dangi</last>
+  </name>
+  <contact>
+   <primary>7568577487</primary>
+   <secondary/>
+  </contact>
+  <address>
+   <street>Jk Lakshmipat University</street>
+   <city>Jaipur</city>
+   <state>Rajasthan</state>
+   <pincode>302026</pincode>
+  </address>
+  <email>rdsquare144@gmail.com</email>
+ </MP00010001>
+ <MP00010002 id="Y">
+  <adhaar>898997999899</adhaar>
+  <name>
+   <first>Testin</first>
+   <middle/>
+   <last>gmail</last>
+  </name>
+  <contact>
+   <primary>9878979890</primary>
+   <secondary/>
+  </contact>
+  <address>
+   <street>Jk Lakshmiapt University</street>
+   <city>Jaipur</city>
+   <state>Madhya Pradesh</state>
+   <pincode>302026</pincode>
+  </address>
+  <email>rdsquare144@gmail.com</email>
+ </MP00010002>
+ <MP00010003 id="Y">
+  <adhaar>908990979080</adhaar>
+  <name>
+   <first>Vikas</first>
+   <middle></middle>
+   <last>Mishra</last>
+  </name>
+  <contact>
+   <primary>9878978967</primary>
+   <secondary></secondary>
+  </contact>
+  <address>
+   <street>jk lakshmipat university</street>
+   <city>jaipur</city>
+   <state>Rajasthan</state>
+   <pincode>302026</pincode>
+  </address>
+  <email>vikasmishra4078@gmail.com</email>
+ </MP00010003>
+</LD0001>
