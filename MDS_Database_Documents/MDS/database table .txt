@@ -1,0 +1,1029 @@
+T-01
+
+create table DataBase(
+DBaseID char(6) Not Null,
+Name varchar(10) Not Null,
+Password varchar(10) Not Null,
+Host varchar(8) Not Null,
+UserName varchar(10) Not Null
+);
+
+
+
+T-02
+
+
+create table Founder(
+FID char(2) Not Null,
+FFName nvarchar(8) Not Null,
+FMName nvarchar(8) Null,
+FLastName nvarchar(8) Null,
+ProfilePic blob  Null,               //NotNull
+FaFName nvarchar(10) Not Null,
+FamName nvarchar(10)  Null,
+FaLName nvarchar(10)  Null,
+DOB Date Not Null,
+Description nvarchar(500) Not Null,
+Specialties varchar(50) Not Null
+);
+
+
+T-03
+
+
+create table FounderWebsite(
+Website varchar(20) Null,
+FID char(2) Not Null
+);
+
+
+T-04
+
+
+create table MDS(
+MDSID char(1) Not Null,
+Name nvarchar(15) Not Null,
+FounDate Date Not Null,
+TagLine nvarchar(25),
+Logo blob  Null,       //NotNull
+Description nvarchar(500) Not Null,
+Street nvarchar(35) Not Null,
+City nvarchar(15) Not Null,
+Pincode char(6) Not Null,
+State nvarchar(15) Not Null
+);
+
+
+
+
+T-05 
+
+
+create table MDSWPE(
+MDSID char(1) Not Null,
+Website varchar(25) Not Null,
+Email_ID varchar(30) Not Null
+);
+
+
+T-06
+
+
+create table MDSFounder(
+MDSID char(1) Not Null,
+FID char(2) Not Null
+);
+
+
+
+T-07
+
+
+create table MDSPicture(
+ImgNo integer Not Null,
+MDSID char(1) Not Null,
+Picture blob Null,          // Not Null
+);
+
+
+T-08
+
+
+create table MDSContact(
+MDSID char(1) Not Null,
+Contact char(10) Not Null
+);
+
+
+T-09
+
+
+create table DairyOwner(
+OwnerID char(8) Not Null,
+DOFName nvarchar(15) Not Null,
+DOMName nvarchar(10) Null,
+DOLName nvarchar(10) Null,
+ProfilePic blob Null,   //Not Null
+FAP blob Null,        //Not Null
+BAP blob Null,    //Not Null
+PContact char(10) Not Null,
+SContact char(10) Null,
+Street nvarchar(25) Not Null,
+State nvarchar(15) Not Null,
+Pincode char(6) Not Null,
+Description nvarchar(500) Not Null
+);
+
+
+T-10
+
+
+create table DairyOwnerAadhaar(
+OwnerID char(8) Not Null,
+AadhaarCard char(12) Not Null
+);
+
+
+
+T-11
+
+
+
+create table Dairy(
+LocalDID char(6) Not Null,
+Name nvarchar(40) Not Null,
+Street nvarchar(50) Not Null,
+City nvarchar(20) Not Null,
+State nvarchar(20) Not Null, 
+EstDate Date Not Null,
+Tagline nvarchar(30) Not Null,
+Logo blob Null,          //Not Null  
+Description nvarchar(500) Not Null,
+Website varchar(30) Null,
+Pincode char(6) Not Null
+);
+
+
+
+T-12
+
+
+
+create table DairyOwnerLog(
+LocalDID char(6) Not Null,
+OwnerID char(8) Not Null
+);
+
+
+
+
+T-13
+
+
+create table DairyHB(
+LocalDID char(6) Not Null,
+HBID char(6) Null,
+IsActive char(1) Not Null
+);
+
+
+T-14 
+
+
+
+create table DairyWPED(
+LocalDID char(6) Not Null,
+Email_id varchar(30) Not Null,
+DBaseID char(8) Not Null
+);
+
+
+
+T-15
+
+
+
+create table DairyPicture(
+ImgNo integer Not Null,
+LocalDID char(6) Not Null,
+Picture blob Null,
+);
+
+
+
+T-16
+
+
+create table DairyPayInfo(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+);
+
+
+
+
+
+T-17
+
+
+
+create table DairyAccountNo(
+BID char(6) Not Null,
+DCAccountNo varchar(18) Not Null
+);
+
+
+T-18
+
+
+create table HighBranch(
+HBID char(6) Not Null,
+LocalDID char(6) Not Null
+);
+
+
+
+T-19
+
+
+
+create table MD(
+LocalDID char(6) Not Null,
+HBID char(6) Not Null,
+IsActive char(1) Not Null
+);
+
+
+
+T-20
+
+
+create table MDBranch(
+LocalDID char(6) Not Null,
+BranchID char(6) Not Null,
+IsActive char(1) Not Null
+);
+
+
+
+
+
+
+
+
+
+T21
+create table BankInfo(
+BID char(6) NotNull,
+NameOnAccount nvarchar(8) NotNull,
+ACType varchar NotNull,
+BankName nvarchar NotNull,
+IFSC_Code varchar Null,
+BranchName nvarchar Null,
+CVV char(3) Null,
+Expdate Date Null
+
+);
+
+
+
+
+
+
+
+
+T22
+create table BankAccountNo(
+BID char(6) NotNull,
+DCAccount varchar NotNull
+
+);
+
+
+
+
+
+
+T23
+create table Producer(
+ProdID char(10) NotNull,
+ProdFName nvarchar NotNull,
+ProdMName nvarchar Null,
+ProdLName nvarchar Null,
+Pcontact char(10) NotNull,
+Scontact char(10) Null,
+Street nvarchar Null,
+City nvarchar NotNull,
+State nvarchar NotNull,
+Pincode char(6) NotNull,
+Email_ID varchar Null,
+IsApp char(1) NotNull 
+
+);
+
+
+
+
+
+
+
+
+T24
+create table ProducerPAE(
+ProdID char(10) NotNull,
+AdhaarNo char(12) NotNull
+
+);
+
+
+
+
+
+
+
+
+T25
+create table ProducerAccount(
+ProdID char(10) NotNull,
+BID char(6) NotNull
+
+);
+
+
+
+
+
+
+
+T26
+create table Consumer(
+ConsID char(10) NotNull,
+ConsFName nvarchar NotNull,
+ConsMName nvarchar Null,
+ConsLName nvarchar Null,
+Pcontact char(10) NotNull,
+Scontact char(10) Null,
+Street nvarchar Null,
+City nvarchar NotNull,
+State nvarchar NotNull,
+Pincode char(6) NotNull,
+Email_ID varchar Null,
+IsApp char(1) NotNull
+
+);
+
+
+
+
+
+
+
+T27
+create table ConsumerPAE(
+Cons char(10) NotNull,
+AdhaarNo char(12) NotNull
+
+);
+
+
+
+
+
+T28
+create table ConsmuerAccount(
+ConsID char(10) NotNull,
+BID char(6) NotNull
+
+);
+
+
+
+
+
+
+
+T29
+create table MilkType(
+MilkTypeID shortinteger NotNull,
+MilkType nvarchar NotNull  
+
+);
+
+
+
+
+
+
+T30
+create table ConsMilkLog(
+ConsID char(10) NotNull,
+OfDate Date NotNull,
+TimeStamp DateTime NotNull,
+IsMorning char(1) NotNull,
+Quantity number(.) NotNull,
+SNF number(.) Null,
+WaterP number(.) Null,
+FAT number(.) Null,
+Price number(.) NotNull,
+MilkTypeID shortinteger NotNull,
+IsKg char(1) NotNull
+
+);
+
+
+
+T31
+create table ProdMilkLog(
+ProdID char(10) NotNull,
+Ofdate Date NotNull,
+TimeStamp DateTime NotNull,
+IsMorning char(1) NotNull,
+Quantity number(.) NotNull,
+SNF number(.) Null,
+WaterP number(.) Null,
+FAT number(.) Null,
+Price number(.) NotNull,
+MilkTypeID shortinteger NotNull,
+IsKg char(1) NotNull
+
+);
+
+
+
+
+
+
+T32
+create table PayType(
+PayTypeNo shortinteger NotNull,
+PayType nvarchar NotNull
+
+);
+
+
+
+
+
+T33
+create table ConsPay(
+ConsID char(10) NotNull,
+ToDate Date NotNull,
+TimeStamp DateTime NotNull,
+TAmount number(.) NotNull,
+Debit number(.) NotNull,
+Amount number(.) NotNull,
+Pay number(.) NotNull,
+PayTypeNo shortinteger NotNull,
+PayDetail nvarchar NotNull,
+PayAccount nvarchar Null,
+ToBID char(6) Null
+
+);
+
+
+
+
+T34 
+create table ConsDebit(
+ConsID char(6) NotNull,
+OnDate Date NotNull,
+Timestamp DateTime NotNull,
+DebAmount number(.) NotNull,
+PayTyprNo shortinteger NotNull,
+PayDetail nvarchar NotNull,
+PayAccount nvarchar Null,
+ToBID char(6) Null
+
+);
+
+
+
+
+
+
+T35
+create table ProdPay(
+ProdID char(6) NotNull,
+ToDate Date NotNull,
+TimeStamp DateTime NotNull,
+TAmount number(.) NotNull,
+Amount number(.) NotNull,
+Pay number(.) NotNull,
+PayTypeNo shortinteger NotNull,
+PayDetail nvarchar NotNull,
+PayAccount nvarchar Null,
+ToBID char(6) Null
+
+);
+
+
+
+
+T36
+create table ProdAdvPay(
+ProdID char(6) NotNull,
+OnDate Date NotBull,
+TimeStamp DateTime NotNull,
+AdvAmount number(.) NotNull,
+PayTypeNo shortinteger NotNull,
+PayDetail nvarchar NotNull,
+PayAccount nvarchar Null,
+ToBID char(6) Null
+
+);
+
+
+
+
+
+T37
+create table Department(
+DepID char(2) NotNull,
+DepName nvarchar NotNull,
+Description nvarchar NotNull
+
+);
+
+
+
+
+
+
+T38
+create table Employee(
+EmpID integer NotNull,
+EMPFName nvarchar NotNull,
+EMPMName nvarchar Null,
+EMPLName nvarchar Null,
+DOJoin Date NotNull,
+EmpDOB Date NotNull,
+Pcontact char(10) NotNull,
+Scontact char(10) Null,
+Street nvarchar Null,
+City nvarchar NotNull,
+State nvarchar NotNull,
+Hqualification nvarchar Null,
+IsActive char(1) NotNull,
+Pincode char(6) NotNull,
+Email_ID varchar Null,
+Salary number(.) NotNull
+
+);
+
+
+
+
+
+
+T39 
+create table Departmentmang(
+DepID char(2) NotNull,
+MangID integer NotNull
+
+);
+
+
+
+
+T40
+create table EmployeePAE(
+EmpID integer NotNull,
+AdhaarNo char(12) NotNull
+
+);
+
+
+
+
+
+
+T41
+create table EmployeeDep(
+EmpID integer NotNull,
+DepID char(2) NotNull,
+Designation nvarchar NotNull
+
+);
+
+
+
+
+
+
+T42
+create table ManagerDepLog(
+MangID integer NotNull,
+DepID char(2) NotNull,
+FromDate Date NotNull,
+ToDate Date Null
+
+);
+
+
+
+
+
+
+T43
+create table AttendenceLog(
+EmpID integer NotNull,
+OfDate Date NotNull,
+IsMorning char(1) NotNull,
+IsPresent char(1) Null
+
+);
+
+
+
+T44
+create table EmpPay(
+EmpID integer NotNull,
+ToDate Date NotNull,
+TimeStamp DateTime NotNull,
+TAmount number(.) NotNull,
+Amount number(.) NotNull,
+Pay number(.) NotNull,
+PayTypeNo shortinteger NotNull,
+PayDetail nvarchar NotNull,
+PayAccount nvarchar Null,
+ToBID char(6) Null,
+Salary number(.) NotNull
+
+);
+
+
+
+
+
+T45
+create table EmpDebit(
+EmpID integer NotNull,
+OnDate Date NotBull,
+TimeStamp DateTime NotNull,
+AdvAmount number(.) NotNull,
+PayTypeNo shortinteger NotNull,
+PayDetail nvarchar NotNull,
+PayAccount nvarchar Null,
+ToBID char(6) Null
+
+);
+
+
+
+
+
+
+T46
+create table Transport(
+TransID shortinteger NotNull,
+VehicleNo varchar NotNull,
+DrivFName nvarchar NotNull,
+DrivMName nvarchar Null,
+DrivLName nvarchar Null,
+DLicenseNo varchar Null,
+Pcontact char(10) Null,
+Scontact char(10) Null
+
+);
+
+
+
+
+
+
+T47
+create table BranchMilkLog(
+BranchID char(6) NotNull,
+Ofdate Date NotNull,
+TimeStamp DateTime NotNull,
+IsMorning char(1) NotNull,
+TMQuantity number(.) NotNull,
+TClyQuantity number(.) NotNull,
+CSN char NotNull,
+FAT number(.) Null,
+SNF number(.) Null,
+WaterP number(.) Null,
+Price number(.) NotNull,
+IsKg char(1) NotNull,
+ArriveTime Time Null,
+TransID shortinteger NotNull,
+MilkTypeID shortinteger NotNull
+
+);
+
+
+
+
+
+
+
+T48
+create table BranchPayLog(
+BranchID char(6) NotNull,
+ToDate Date NotNull,
+TimeStamp DateTime NotNull,
+TAmount number(.) NotNull,
+Amount number(.) NotNull,
+Pay number(.) NotNull,
+PayTypeNo shortinteger NotNull,
+PayDetail nvarchar NotNull,
+PayAccount nvarchar Null,
+ToBID char(6) Null,
+
+);
+
+
+
+
+
+
+
+T49
+create table AdditionalCustMob(
+ACustID shortinteger NotNull,
+Contact char(10) NotNull
+
+);
+
+
+
+
+
+
+
+
+T50
+create table AdditionalCustName(
+ACustID shortinteger NotNull,
+AFName nvarchar NotNull,
+AMName nvarchar Null,
+ALName nvarchar Null,
+
+);
+
+
+
+
+
+
+
+T51
+create table AddMilkLof(
+ACustID shortinteger NotNull,
+TimeStamp DateTime NotNull,
+TimeStamp DateTime NotNull,
+Quantity number(.) NotNull,
+SNF number(.) Null,
+FAT number(.) Null,
+WaterP number(.) Null,
+Price number(.) NotNull,
+IsKg char(1) NotNull,
+
+);
+
+
+
+
+T52
+create table SEMilkRecord(
+HBID char(6) NotNull, 
+Ofdate Date NotNull,
+TimeStamp DateTime NotNull,
+IsMorning char(1) NotNull,
+TransID shortinteger NotNull,
+TClyQuantity number(.) NotNull,
+TMQuantity number(.) NotNull,
+CSN varchar NotNull,
+FAT number(.) Null,
+SNF number(.) Null,
+WaterP number(.) Null,
+Price number(.) NotNull,
+IsKg char(1) NotNull,
+MilkTypeID shortinteger NotNull
+
+);
+
+
+
+
+
+
+
+T53
+create table SEPayRecord(
+HBID char(6) NotNull, 
+Todate Date NotNull,
+TimeStamp DateTime NotNull,
+TAmount number(.) NotNull,
+Amount number(.) NotNull,
+Pay number(.) NotNull,
+AdvPay number(.) NotNull,
+PayTypeNo shortinteger NotNull,
+PayDetail nvarchar NotNull,
+ToBID char(6) Null,
+PayAccount nvarchar Null,
+
+);
+
+
+
+
+
+
+T54
+create table ProductCategory(
+ProductCatID shortinteger NotNull,
+ProductCatName nvarchar NotNull
+
+);
+
+
+
+
+
+
+
+T55
+create table WeightType(
+WTID shortinteger NotNull,
+WeightType nvarchar NotNull
+
+);
+
+
+
+
+
+
+T56
+create table PackagingType(
+PackTypeID shortinteger NotNull,
+PackType nvarchar NotNull
+
+);
+
+
+
+
+
+
+
+
+T57
+create table Product(
+ProductID shortinteger NotNull,
+ProductName nvarchar NotNull,
+BrandName nvarchar NotNull,
+Price nvarchar Null,
+Amount number(.) NotNull,
+PackTypeID shortinteger NotNull,
+ProductCatID shortinteger NotNull,
+WTID shortinteger NotNull,
+Decription nvarchar Null 
+
+
+);
+
+
+
+
+
+T58
+create table HumanFood(
+ProductID shortinteger NotNull,
+Color nvarchar NotNull,
+Packsize nvarchar NotNull,
+Ingredients nvarchar Null
+
+);
+
+
+
+
+
+
+T59
+create table AnimalFood(
+ProductID shortinteger NotNull,
+Appearance nvarchar Null,
+Weight nvarchar NotNull,
+Ingredients nvarchar Null
+
+);
+
+
+
+
+
+
+T60
+create table Plantseed(
+ProductID shortinteger NotNull,
+Color nvarchar NotNull,
+Weight nvarchar NotNull,
+PlantName nvarchar NotNull
+
+
+);
+
+
+
+
+
+T61
+create table AnimalMedicine(
+ProductID shortinteger NotNull,
+Apperance nvarchar Null,
+PackSize nvarchar NotNull,
+FromWhere nvarchar NotNull,
+AnimalType nvarchar NotNull
+
+);
+
+
+
+
+
+T62
+create table ProductArriveLog(
+ProductID shortinteger NotNull,
+OnDate Date NotNull,
+TimeStamp DateTime NotNull,
+TotalQuantity number(.) NotNull,
+Amount number(.) NotNull,
+FromAddress nvarchar Null
+
+
+);
+
+
+
+
+
+
+T63
+create table ProductSPLog(
+ProdID char(6) NotNull,
+OnDate Date NotNull,
+TimeStamp DateTime NotNull,
+ProductID shortinteger NotNull,
+TotalQuantity number(.) NotNull,
+Price number(.) NotNull,
+IsPaid char(1) NotNull
+
+
+);
+
+
+
+
+
+T64
+create table ProductSELog(
+EmpID integer NotNull,
+OnDate Date NotNull,
+TimeStamp DateTime NotNull,
+ProductID shortinteger NotNull,
+TotalQuantity number(.) NotNull,
+Price number(.) NotNull,
+IsPaid char(1) NotNull
+
+);
+
+
+
+
+T65
+create table ProductSILog(
+ACustID shortinteger NotNull,
+OnDate Date NotNull,
+TimeStamp DateTime NotNull,
+ProductID shortinteger NotNull,
+TotalQuantity number(.) NotNull,
+Price number(.) NotNull,
+IsPaid char(1) NotNull
+
+);
+
+
+
+
+
+
+
+T66
+create table NotificationLog(
+NotifyNo number NotNull,
+TimeStamp DateTime NotNull,
+From char(6) NotNull,
+To char(10) NotNull,
+Subject nvarchar Null,
+MsgBody nvarchar NotNull,
+IsRead char(1) NotNull,
+
+);
+
+
+
+
+
+
+
+T67
+create table NotificationAttach(
+NotifyNo number NotNull,
+FileAttachAddress varchar NotNull
+
+);

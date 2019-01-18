@@ -1,0 +1,533 @@
+T3
+
+ALTER TABLE FounderWebsite
+ADD CONSTRAINT FK_FOUNDFID FOREIGN KEY (FID) REFERENCES Founder(FID);
+
+/////////////////////////////////////////////////////////////
+T5 
+
+ALTER TABLE MDSWPE
+ADD CONSTRAINT FK_MDSMID FOREIGN KEY (MDSID) REFERENCES MDS (MDSID);
+
+//////////////////////////////////////////////////////////////
+
+T6 
+
+ALTER TABLE MDSFounder
+ADD CONSTRAINT FK_MFOUNDERMID FOREIGN KEY (MDSID) REFERENCES MDS (MDSID);
+
+ALTER TABLE MDSFounder
+ADD CONSTRAINT FK_MFOUNDERFID FOREIGN KEY (FID) REFERENCES Founder (FID);
+
+///////////////////////////////////////////////////////////////
+
+T7
+
+ALTER TABLE MDSPicture
+ADD CONSTRAINT FK_MDSPICTUREMID FOREIGN KEY (MDSID) REFERENCES MDS (MDSID);
+
+//////////////////////////////////////////////////////////////////
+
+T8
+
+ALTER TABLE MDSContact
+ADD CONSTRAINT FK_MDSCONTMID FOREIGN KEY (MDSID) REFERENCES MDS (MDSID);
+
+////////////////////////////////////////////////////////////////
+
+T10
+
+ALTER TABLE DairyOwnerAadhaar
+ADD CONSTRAINT FK_DOADHOID FOREIGN KEY (OwnerID) REFERENCES DairyOwner (OwnerID);
+
+////////////////////////////////////////////////////////////////////////
+
+T12
+
+ALTER TABLE DairyOwnerLog
+ADD CONSTRAINT FK_DOLLID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+ALTER TABLE DairyOwnerLog
+ADD CONSTRAINT FK_DOLOID FOREIGN KEY (OwnerID) REFERENCES DairyOwner (OwnerID);
+
+////////////////////////////////////////////////////////////////////////
+
+
+T13
+
+ALTER TABLE DairyHB
+ADD CONSTRAINT FK_DHLID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+ALTER TABLE DairyHB
+ADD CONSTRAINT FK_DHHBID FOREIGN KEY (HBID) REFERENCES Dairy(LocalDID);
+
+////////////////////////////////////////////////////////////////////////
+
+T14
+
+ALTER TABLE DairyWPED
+ADD CONSTRAINT FK_DWLID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+
+////////////////////////////////////////////////////////////////
+
+T15
+
+ALTER TABLE DairyPicture
+ADD CONSTRAINT FK_DPLID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+//////////////////////////////////////////////////////////////////
+
+T16
+
+ALTER TABLE DairyPayInfo
+ADD CONSTRAINT FK_DPILID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+//////////////////////////////////////////////////////////////////////
+
+T17
+
+ALTER TABLE DairyAccountNo
+ADD CONSTRAINT FK_DANBID FOREIGN KEY (BID) REFERENCES DairyPayInfo (BID);
+
+/////////////////////////////////////////////////////////////////////////
+
+
+T22
+
+ALTER TABLE BankAccountNo
+ADD CONSTRAINT FK_BANBID FOREIGN KEY (BID) REFERENCES BankInfo (BID);
+
+////////////////////////////////////////////////////////////////////////////
+
+T23
+
+ALTER TABLE Producer
+ADD CONSTRAINT FK_PLDID FOREIGN KEY (LocalDID) REFERENCES Dairy(LocalDID);
+
+///////////////////////////////////////////////////////////////////////////
+
+T24
+
+ALTER TABLE ProducerPAE
+ADD CONSTRAINT FK_PPAEPID FOREIGN KEY (ProdID) REFERENCES Producer (ProdID);
+
+///////////////////////////////////////////////////////////////////
+
+T25
+
+ALTER TABLE ProducerAccount
+ADD CONSTRAINT FK_PAPID FOREIGN KEY (ProdID) REFERENCES Producer (ProdID);
+
+ALTER TABLE ProducerAccount
+ADD CONSTRAINT FK_PABID FOREIGN KEY (BID) REFERENCES BankInfo (BID);
+
+//////////////////////////////////////////////////////////////////////////
+
+T26
+
+ALTER TABLE Consumer
+ADD CONSTRAINT FK_CLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+////////////////////////////////////////////////////////////////////////////
+
+T27
+
+
+ALTER TABLE ConsumerPAE
+ADD CONSTRAINT FK_CPAECID FOREIGN KEY (ConsID) REFERENCES Consumer (ConsID);
+
+//////////////////////////////////////////////////////////////////////////
+
+T28
+
+ALTER TABLE ConsumerAccount
+ADD CONSTRAINT FK_CACID FOREIGN KEY (ConsID) REFERENCES Consumer (ConsID);
+
+ALTER TABLE ConsumerAccount
+ADD CONSTRAINT FK_CABID FOREIGN KEY (BID) REFERENCES BankInfo (BID);
+
+/////////////////////////////////////////////////////////////////////////
+
+T30
+
+ALTER TABLE ConsMilkLog
+ADD CONSTRAINT FK_CMLCID FOREIGN KEY (ConsID) REFERENCES Consumer (ConsID);
+
+ALTER TABLE ConsMilkLog
+ADD CONSTRAINT FK_CMLMTID FOREIGN KEY (MilkTypeID) REFERENCES MilkType (MilkTypeID);
+
+ALTER TABLE ConsMilkLog
+ADD CONSTRAINT FK_CMLLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+////////////////////////////////////////////////////////////////////////
+
+T31
+
+ALTER TABLE ProdMilkLog
+ADD CONSTRAINT FK_PMLPID FOREIGN KEY (ProdID) REFERENCES Producer (ProdID);
+
+ALTER TABLE ProdMilkLog
+ADD CONSTRAINT FK_PMLMTID FOREIGN KEY (MilkTypeID) REFERENCES MilkType (MilkTypeID);
+
+ALTER TABLE ProdMilkLog
+ADD CONSTRAINT FK_PMLLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+///////////////////////////////////////////////////////////////////////
+
+T33
+
+ALTER TABLE ConsPay
+ADD CONSTRAINT FK_CPCID FOREIGN KEY (ConsID) REFERENCES Consumer (ConsID);
+
+ALTER TABLE ConsPay
+ADD CONSTRAINT FK_CPPTN FOREIGN KEY (PayTypeNo) REFERENCES PayType (PayTypeNo);
+
+ALTER TABLE ConsPay
+ADD CONSTRAINT FK_CPTBID FOREIGN KEY (ToBID) REFERENCES BankInfo (BID);
+
+ALTER TABLE ConsPay
+ADD CONSTRAINT FK_CPLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+////////////////////////////////////////////////////////////////////////
+
+T34
+
+ALTER TABLE ConsDebit
+ADD CONSTRAINT FK_CDCID FOREIGN KEY (ConsID) REFERENCES Consumer (ConsID);
+
+ALTER TABLE ConsDebit
+ADD CONSTRAINT FK_CDPTN FOREIGN KEY (PayTypeNo) REFERENCES PayType (PayTypeNo);
+
+ALTER TABLE ConsDebit
+ADD CONSTRAINT FK_CDTBID FOREIGN KEY (ToBID) REFERENCES BankInfo (BID);
+
+ALTER TABLE ConsDebit
+ADD CONSTRAINT FK_CDLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+/////////////////////////////////////////////////////////////////////////
+
+T35
+
+ALTER TABLE ProdPay
+ADD CONSTRAINT FK_PPPID FOREIGN KEY (ProdID) REFERENCES Producer (ProdID);
+
+ALTER TABLE ProdPay
+ADD CONSTRAINT FK_PPPTN FOREIGN KEY (PayTypeNo) REFERENCES PayType (PayTypeNo);
+
+ALTER TABLE ProdPay
+ADD CONSTRAINT FK_PPTBID FOREIGN KEY (ToBID) REFERENCES BankInfo (BID);
+
+ALTER TABLE ProdPay
+ADD CONSTRAINT FK_PPLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+//////////////////////////////////////////////////////////////////////////
+
+T36
+
+
+ALTER TABLE ProdAdvPay
+ADD CONSTRAINT FK_PAPPID FOREIGN KEY (ProdID) REFERENCES Producer (ProdID);
+
+ALTER TABLE ProdAdvPay
+ADD CONSTRAINT FK_PAPPTN FOREIGN KEY (PayTypeNo) REFERENCES PayType (PayTypeNo);
+
+ALTER TABLE ProdAdvPay
+ADD CONSTRAINT FK_PAPTBID FOREIGN KEY (ToBID) REFERENCES BankInfo (BID);
+
+ALTER TABLE ProdAdvPay
+ADD CONSTRAINT FK_PAPLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+////////////////////////////////////////////////////////////////
+
+T37
+
+ALTER TABLE Department
+ADD CONSTRAINT FK_DLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+/////////////////////////////////////////////////////////////////////////
+
+T38
+
+ALTER TABLE Employee
+ADD CONSTRAINT FK_ELDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+/////////////////////////////////////////////////////////////////////////
+
+T39
+
+ALTER TABLE DepartmentMang
+ADD CONSTRAINT FK_DMDID FOREIGN KEY (DepID) REFERENCES Department (DepID);
+
+ALTER TABLE DepartmentMang
+ADD CONSTRAINT FK_DMMID FOREIGN KEY (MangID) REFERENCES Employee (EmpID);
+
+//////////////////////////////////////////////////////////////////////
+
+T40
+
+ALTER TABLE EmployeePAE
+ADD CONSTRAINT FK_EPAEEID FOREIGN KEY (EmpID) REFERENCES Employee (EmpID);
+
+///////////////////////////////////////////////////////////////////////
+
+T41
+
+ALTER TABLE EmployeeDep
+ADD CONSTRAINT FK_EDEID FOREIGN KEY (EmpID) REFERENCES Employee (EmpID);
+
+ALTER TABLE EmployeeDep
+ADD CONSTRAINT FK_EDDID FOREIGN KEY (DepID) REFERENCES Department (DepID);
+
+////////////////////////////////////////////////////////////////////////
+
+T42
+
+ALTER TABLE ManagerDepLog
+ADD CONSTRAINT FK_MDLMID FOREIGN KEY (MangID) REFERENCES Employee(EmpID);
+
+ALTER TABLE ManagerDepLog
+ADD CONSTRAINT FK_MDLDID FOREIGN KEY (DepID) REFERENCES Department (DepID);
+
+//////////////////////////////////////////////////////////////
+
+T43
+
+ALTER TABLE AttendenceLog
+ADD CONSTRAINT  FK_ALEID FOREIGN KEY (EmpID) REFERENCES Employee (EmpID);
+
+/////////////////////////////////////////////////////////////////
+
+T44
+
+ALTER TABLE EmpPay
+ADD CONSTRAINT FK_EPEID FOREIGN KEY (EmpID) REFERENCES Employee (EmpID);
+
+ALTER TABLE EmpPay
+ADD CONSTRAINT FK_EPPTN FOREIGN KEY (PayTypeNo) REFERENCES PayType (PayTypeNo);
+
+ALTER TABLE EmpPay
+ADD CONSTRAINT FK_EPTEBID FOREIGN KEY (ToBID) REFERENCES BankInfo (BID);
+
+
+/////////////////////////////////////////////////////////////////////
+
+T45
+
+ALTER TABLE EmpDebit
+ADD CONSTRAINT FK_EDEPID FOREIGN KEY (EmpID) REFERENCES Employee (EmpID);
+
+ALTER TABLE EmpDebit
+ADD CONSTRAINT FK_EDPTN FOREIGN KEY (PayTypeNo) REFERENCES PayType (PayTypeNo);
+
+ALTER TABLE EmpDebit
+ADD CONSTRAINT FK_EDTBID FOREIGN KEY (ToBID) REFERENCES BankInfo (BID);
+
+//////////////////////////////////////////////////////////////////////////
+
+T46
+
+ALTER TABLE Transport
+ADD CONSTRAINT FK_TLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+//////////////////////////////////////////////////////////////////////////
+
+T47
+
+ALTER TABLE BranchMilkLog
+ADD CONSTRAINT FK_BMLBID FOREIGN KEY (BranchID) REFERENCES DairyHB (LocalDID);
+
+ALTER TABLE BranchMilkLog
+ADD CONSTRAINT FK_BMLTID FOREIGN KEY (TransID) REFERENCES Transport (TransID);
+
+ALTER TABLE BranchMilkLog
+ADD CONSTRAINT FK_BMLMTID FOREIGN KEY (MilkTypeID) REFERENCES MilkType (MilkTypeID);
+
+ALTER TABLE BranchMilkLog
+ADD CONSTRAINT FK_BMLLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+//////////////////////////////////////////////////////////////////////
+
+T48
+
+ALTER TABLE BranchPayLog
+ADD CONSTRAINT FK_BPLBID FOREIGN KEY (BranchID) REFERENCES DairyHB (LocalDID);
+
+ALTER TABLE BranchPayLog
+ADD CONSTRAINT FK_BPLPTN FOREIGN KEY (PayTypeNo) REFERENCES PayType (PayTypeNo);
+
+ALTER TABLE BranchPayLog
+ADD CONSTRAINT FK_BPLTBID FOREIGN KEY (ToBID) REFERENCES BankInfo (BID);
+
+ALTER TABLE BranchPayLog
+ADD CONSTRAINT FK_BPLLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+//////////////////////////////////////////////////////////////////////
+
+T49
+
+ALTER TABLE AdditionalCustMob
+ADD CONSTRAINT FK_ACLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+/////////////////////////////////////////////////////////////////////////
+
+T50
+
+ALTER TABLE AdditionalCustName
+ADD CONSTRAINT FK_ACNACID FOREIGN KEY (ACustID) REFERENCES AdditionalCustMob (ACustID);
+
+///////////////////////////////////////////////////////////////////////
+
+T51
+
+ALTER TABLE AddMilkLog
+ADD CONSTRAINT FK_AMLACID FOREIGN KEY (ACustID) REFERENCES AdditionalCustMob (ACustID);
+
+ALTER TABLE AddMilkLog
+ADD CONSTRAINT FK_AMLLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+///////////////////////////////////////////////////////////////////
+
+T52
+
+ALTER TABLE SEMilkRecord
+ADD CONSTRAINT FK_SEMRHBID FOREIGN KEY (HBID) REFERENCES  DairyHB (LocalDID);
+
+ALTER TABLE SEMilkRecord
+ADD CONSTRAINT FK_SMRTID FOREIGN KEY (TransID) REFERENCES Transport (TransID);
+
+ALTER TABLE SEMilkRecord
+ADD CONSTRAINT FK_SMRMTID FOREIGN KEY (MilkTypeID) REFERENCES MilkType (MilkTypeID);
+
+ALTER TABLE SEMilkRecord
+ADD CONSTRAINT FK_SMRLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+////////////////////////////////////////////////////////////////////////
+
+T53
+
+ALTER TABLE SEPayRecord
+ADD CONSTRAINT FK_SEPRHBID FOREIGN KEY (HBID) REFERENCES DairyHB (LocalDID);
+
+ALTER TABLE SEPayRecord
+ADD CONSTRAINT FK_SEPRPTN FOREIGN KEY (PayTypeNo) REFERENCES PayType (PayTypeNo); 
+
+ALTER TABLE SEPayRecord
+ADD CONSTRAINT FK_SEPRTBID FOREIGN KEY (ToBID) REFERENCES BankInfo (BID);
+
+ALTER TABLE SEPayRecord
+ADD CONSTRAINT FK_SEPLDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+///////////////////////////////////////////////////////////////////////////
+
+T57
+
+ALTER TABLE Product
+ADD CONSTRAINT FK_PPPETID FOREIGN KEY (PackTypeID) REFERENCES PackagingType (PackTypeID);
+
+ALTER TABLE Product
+ADD CONSTRAINT FK_PPCID FOREIGN KEY (ProductCatID) REFERENCES ProductCategory (ProductCatID);
+
+ALTER TABLE Product
+ADD CONSTRAINT FK_PWTID FOREIGN KEY (WTID) REFERENCES WeightType (WTID);
+
+ALTER TABLE Product
+ADD CONSTRAINT FK_PLDDID FOREIGN KEY (LocalDID) REFERENCES Dairy (LocalDID);
+
+
+////////////////////////////////////////////////////////////////////////
+
+T58
+
+ALTER TABLE HumanFood
+ADD CONSTRAINT FK_HFPID FOREIGN KEY (ProductID, LocalDID) REFERENCES Product (ProductID, LocalDID);
+
+///////////////////////////////////////////////////////////////////////
+
+T59
+
+ALTER TABLE AnimalFood
+ADD CONSTRAINT FK_AFPID FOREIGN KEY (ProductID, LocalDID) REFERENCES Product (ProductID, LocalDID);
+
+/////////////////////////////////////////////////////////////////////
+
+T60
+
+ALTER TABLE PlantSeed
+ADD CONSTRAINT FK_PSPID FOREIGN KEY (ProductID, LocalDID) REFERENCES Product (ProductID, LocalDID);
+
+/////////////////////////////////////////////////////////////////////
+
+T61
+
+ALTER TABLE AnimalMedicine
+ADD CONSTRAINT FK_AMPID FOREIGN KEY (ProductID, LocalDID) REFERENCES Product (ProductID, LocalDID);
+
+/////////////////////////////////////////////////////////////////////////
+
+T62
+
+ALTER TABLE ProductArriveLog
+ADD CONSTRAINT FK_PALPID FOREIGN KEY (ProductID, LocalDID) REFERENCES Product (ProductID, LocalDID);
+
+///////////////////////////////////////////////////////////////////////////
+
+T63
+
+ALTER TABLE ProductSPLog
+ADD CONSTRAINT FK_PSPLPID FOREIGN KEY (ProdID) REFERENCES Producer (ProdID);
+
+ALTER TABLE ProductSPLog
+ADD CONSTRAINT FK_PSPLPDID FOREIGN KEY (ProductID, LocalDID) REFERENCES Product (ProductID, LocalDID);
+
+ 
+///////////////////////////////////////////////////////////////////////////
+
+T64
+
+ALTER TABLE ProductSELog
+ADD CONSTRAINT FK_PSELEID FOREIGN KEY (EmpID) REFERENCES Employee (EmpID);
+
+ALTER TABLE ProductSELog
+ADD CONSTRAINT FK_PSELPID FOREIGN KEY (ProductID, LocalDID) REFERENCES Product (ProductID, LocalDID);
+
+///////////////////////////////////////////////////////////////////////////
+
+T65
+
+ALTER TABLE ProductSILog
+ADD CONSTRAINT FK_PSILACID FOREIGN KEY (ACustID) REFERENCES AdditionalCustMob (ACustID);
+
+ALTER TABLE ProductSILog
+ADD CONSTRAINT FK_PSILPID FOREIGN KEY (ProductID, LocalDID) REFERENCES Product (ProductID, LocalDID);
+
+/////////////////////////////////////////////////////////////////////////
+
+T67
+
+ALTER TABLE NotificationAttach
+ADD CONSTRAINT FK_NANN FOREIGN KEY (NotifyNo) REFERENCES NotificationLog (NotifyNo);
+
+////////////////////////////////////////////////////////////////////////////
+
+T68
+
+ALTER TABLE EmployeeAccount
+ADD CONSTRAINT FK_EAEID FOREIGN KEY (EmpID) REFERENCES Employee(EmpID);
+
+ALTER TABLE EmployeeAccount
+ADD CONSTRAINT FK_EABID FOREIGN KEY (BID) REFERENCES BankInfo (BID);
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+T69
+
+ALTER TABLE DairyRequestLog
+ADD CONSTRAINT FK_DRLSD FOREIGN KEY (SendDairy) REFERENCES Dairy(LocalDID);
+
+ALTER TABLE DairyRequestLog
+ADD CONSTRAINT FK_DRLTD FOREIGN KEY (ToDairy) REFERENCES Dairy(LocalDID);
+
+ALTER TABLE ProductGst
+ADD CONSTRAINT FK_PGPIDLDID FOREIGN KEY (ProductID, LocalDID) REFERENCES Product (ProductID, LocalDID);

@@ -1,0 +1,874 @@
+T-2
+
+INSERT INTO Founder(
+FID,
+FFName,
+FMName,
+FLastName,
+ProfilePic,        
+FaFName,
+FamName,
+FaLName,
+DOB  ,
+Description,
+Specialties  
+)
+ VALUES ('02',
+'archit',
+'jain',
+'singhal',
+NULL,
+'ANIL',
+'JAIN',
+'SINGHAL',
+TO_DATE('27/08/1998','DD/MM/YYYY'),
+'This is founder of system',
+'Software Development'
+);
+
+T-09
+
+
+INSERT INTO DairyOwner(
+OwnerID,
+DOFName,DOMName,DOLName,
+ProfilePic,FAP, BAP,
+PContact,SContact,
+Street,City,State,Pincode,
+Description 
+)
+VALUES('OD2525',
+'RAMU','KAKA','PRASAD',
+NULL,NULL,NULL,
+'9696969696','9586348219',
+'524 SHYAM NAGAR GORILLA GAWN',
+'JAIPUR','RAJASTHAN','302026',
+'This is milk owner'
+);
+
+
+
+INSERT INTO DairyOwner(
+OwnerID,
+DOFName,DOMName,DOLName,
+ProfilePic,FAP, BAP,
+PContact,SContact,
+Street,City,State,Pincode,
+Description 
+)
+VALUES('OD2565',
+'NANU','DAS','ROY',
+NULL,NULL,NULL,
+'6589321456','6582548963',
+'254 RAM NAGAR COLONY',
+'UDAIPUR','RAJASTHAN','302526',
+'SDGGRFDFH'
+);
+
+
+
+INSERT INTO DairyOwner(
+OwnerID,
+DOFName,DOMName,DOLName,
+ProfilePic,FAP, BAP,
+PContact,SContact,
+Street,City,State,Pincode,
+Description 
+)
+VALUES('OD5478',
+'SAMU','KELA','RAMA',
+NULL,NULL,NULL,
+'9587456321','9852367458',
+'215 SINGHAL COLONY ',
+'BHOPAL','MADHYA PRADESH','125148',
+'DHFNRYDRHFNR'
+);
+
+
+INSERT INTO DairyOwner(
+OwnerID,
+DOFName,DOMName,DOLName,
+ProfilePic,FAP, BAP,
+PContact,SContact,
+Street,City,State,Pincode,
+Description 
+)
+VALUES('OD1212',
+'LUCKY','KASAB','JAIHO',
+NULL,NULL,NULL,
+'2548963214','2589631478',
+'289 RAM COLONY',
+'INDORE','MADHYA PRADESH','253698',
+'FSFDGDGGGERGG'
+);
+
+
+
+
+
+T-21
+
+
+
+INSERT INTO BankInfo(
+BID,NameOnAccount,
+ACType,BankName,
+IFSC_Code,BranchName,
+CVV,Expdate
+)
+VALUES('BA1000','SACHIN',
+'Credit','BANK OF BARODA',
+'756BOI987', 'kHAMOLI',
+NULL, TO_DATE('27/08/2027','DD/MM/YYYY')
+);
+
+INSERT INTO BankInfo(
+BID,NameOnAccount,
+ACType,BankName,
+IFSC_Code,BranchName,
+CVV,Expdate
+)
+VALUES('BA1001','SANDEEP KUMAWAT',
+'DEBIT','STATE BANK OF INDIA',
+'IFSCSBI989','SANGANER',
+'548',TO_DATE('26/09/2027','DD/MM/YYYY')
+);
+
+
+INSERT INTO BankInfo(
+BID,NameOnAccount,
+ACType,BankName,
+IFSC_Code,BranchName,
+CVV,Expdate
+)
+VALUES('BA1002','SHASHANK SHARMA',
+'NET BANKING','PNB',
+'IFSC988','CHOMU',
+'456',TO_DATE('22/09/2027','DD/MM/YYYY')
+);
+
+
+
+INSERT INTO BankInfo(
+BID,NameOnAccount,
+ACType,BankName,
+IFSC_Code,BranchName,
+CVV,Expdate
+)
+VALUES('BA1003','KALU JAIN',
+'BANK','BOI',
+'IFSC765','TONK',
+NULL,NULL
+);
+
+
+
+T-26
+
+
+
+INSERT INTO Consumer(
+ConsID,
+ConsFName,ConsMName,ConsLName,
+Pcontact,Scontact,
+Street,City,State,
+Pincode,Email_ID,IsApp
+)
+VALUES('LD1000C001',
+'ANSHU','JAIN','SINGHAL',
+'2536362514','5689547896',
+'145 RAMU NAGAR SODALA','JAIPUR','RAJASTHAN',
+'302020','RAH@GMAIL.COM','0'
+);
+
+
+
+INSERT INTO Consumer(
+ConsID,
+ConsFName,ConsMName,ConsLName,
+Pcontact,Scontact,
+Street,City,State,
+Pincode,Email_ID,IsApp
+)
+VALUES('LD1000C002',
+'LUCY','DEV','RAMU',
+'2458963214','1458796325',
+'154 SHALU NAGAR ','AJMER','RAJASTHAN',
+'356985','SWE@GMAIL.COM','0'
+);
+
+
+
+INSERT INTO COnsumer(
+ConsID,
+ConsFName,ConsMName,ConsLName,
+Pcontact,Scontact,
+Street,City,State,
+Pincode,Email_ID,IsApp
+)
+VALUES('LD1000C003',
+'KILU','SHEELU','DON',
+'2589654789','1254789563',
+'254 FATTU GALI ','PANJI','Rajasthan',
+'354896','AFG@GMAIL.COM','1'
+);
+
+
+
+INSERT INTO Consumer(
+ConsID,
+ConsFName,ConsMName,ConsLName,
+Pcontact,Scontact,
+Street,City,State,
+Pincode,Email_ID,IsApp
+)
+VALUES('LD1000C004',
+'NEERAJ','LUNAWAT','CHOTU',
+'5689321569','8745698563',
+'2546 KALU NAGAR ','BASKODIGAMA','Rajasthan',
+'354789','CH@YAHOO.COM','1'
+);
+
+
+
+
+
+T-29
+
+
+INSERT INTO MilkType(
+MilkTypeID,MilkType  
+)
+VALUES(1,'COW'
+);
+
+
+INSERT INTO MilkType(
+MilkTypeID,MilkType  
+)
+VALUES(2,'BUFFALO'
+);
+
+
+INSERT INTO MilkType(
+MilkTypeID,MilkType  
+)
+VALUES(3,'MIX'
+);
+
+
+
+T-32
+
+
+INSERT INTO PayType(
+PayTypeNo,PayType 
+)
+VALUES(1,'DEBIT'
+);
+
+INSERT INTO PayType(
+PayTypeNo,PayType 
+)
+VALUES(2,'CREDIT'
+);
+
+INSERT INTO PayType(
+PayTypeNo,PayType 
+)
+VALUES(3,'NET BANKING'
+);
+
+INSERT INTO PayType(
+PayTypeNo,PayType 
+)
+VALUES(4,'BANK'
+);
+
+INSERT INTO PayType(
+PayTypeNo,PayType 
+)
+VALUES(5,'CASH'
+);
+
+
+///////////////////////////////////////////////////////////////
+
+T-03
+
+
+
+INSERT INTO FounderWebsite(
+Website,FID  
+)
+VALUES('WWW.SDFG.COM','02'
+);
+
+
+
+INSERT INTO FounderWebsite(
+Website,FID  
+)
+VALUES('WWW.FFDF.COM','02'
+);
+
+
+
+
+
+T-07
+
+
+
+INSERT INTO MDSPicture(
+ImgNo,MDSID,Picture    
+)
+VALUES(1,'M',NULL
+);
+
+
+T-12
+
+INSERT INTO DairyOwnerLog(
+LocalDID,OwnerID
+)
+VALUES('LD1000','OD2525'
+);
+
+T-15
+
+
+INSERT INTO DairyPicture(
+ImgNo,LocalDID,Picture
+)
+VALUES(1,'LD1000',NULL
+);
+
+
+T-25
+
+INSERT INTO ProducerAccount(
+ProdID,BID
+)
+VALUES('LD1000P001','BA1000'
+);
+
+
+INSERT INTO ProducerAccount(
+ProdID,BID
+)
+values('LD1000P002','BA1001'
+);
+
+INSERT INTO ProducerAccount(
+ProdID,BID
+)
+VALUES('LD1000P003','BA1002'
+);
+
+
+INSERT INTO ProducerAccount(
+ProdID,BID
+)
+VALUES('LD1000P004','BA1003'
+);
+
+
+
+
+
+
+T-39
+
+
+
+INSERT INTO DepartmentMang(
+DepID,MangID  
+)
+VALUES('D1',1
+);
+
+INSERT INTO DepartmentMang(
+DepID,MangID  
+)
+VALUES('D2',2
+);
+
+
+INSERT INTO DepartmentMang(
+DepID,MangID  
+) 
+VALUES('D3',3
+);
+
+
+
+
+T-50
+
+
+
+INSERT INTO AdditionalCustName(
+ACustID,
+AFName,AMName,ALName
+)
+VALUES(1,
+'Default',NULL,NULL
+);
+
+
+INSERT INTO AdditionalCustName(
+ACustID,
+AFName,AMName,ALName
+)
+VALUES(2,
+'RAHUL',NULL,'Dangi'
+);
+
+
+
+T-42
+
+INSERT INTO ManagerDepLog(
+MangID,
+DepID,FromDate,ToDate
+)
+VALUES(1,
+'D1',
+TO_DATE('17/02/2018','DD/MM/YYYY'),
+NULL
+);
+
+INSERT INTO ManagerDepLog(
+MangID,
+DepID,FromDate,ToDate
+)
+VALUES(2,
+'D2',
+TO_DATE('25/02/2018','DD/MM/YYYY'),
+NULL
+);
+
+
+INSERT INTO ManagerDepLog(
+MangID,
+DepID,FromDate,ToDate
+)
+VALUES(3,
+'D3',
+TO_DATE('1/02/2018','DD/MM/YYYY'),
+NULL
+);
+
+
+
+T-31
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('01/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('01/02/2018 07:04:55','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('01/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('01/02/2018 18:04:55','DD/MM/YYYY HH24:MI:SS'),
+'0',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('02/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('02/02/2018 08:04:55','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('03/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('03/02/2018 19:04:55','DD/MM/YYYY HH24:MI:SS'),
+'0',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('05/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('05/02/2018 06:04:55','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('05/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('05/02/2018 20:04:55','DD/MM/YYYY HH24:MI:SS'),
+'0',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('06/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('06/02/2018 09:04:55','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('06/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('06/02/2018 09:06:55','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('07/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('07/02/2018 18:04:55','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P001',
+TO_DATE('07/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('07/02/2018 18:24:55','DD/MM/YYYY HH24:MI:SS'),
+'0',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('01/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('01/02/2018 07:04:58','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('01/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('01/02/2018 18:04:59','DD/MM/YYYY HH24:MI:SS'),
+'0',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('02/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('02/02/2018 08:04:59','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('03/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('03/02/2018 19:05:51','DD/MM/YYYY HH24:MI:SS'),
+'0',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('05/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('05/02/2018 06:04:20','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('05/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('05/02/2018 20:04:16','DD/MM/YYYY HH24:MI:SS'),
+'0',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('06/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('06/02/2018 09:04:11','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('06/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('06/02/2018 09:06:08','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('07/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('07/02/2018 18:04:07','DD/MM/YYYY HH24:MI:SS'),
+'1',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+INSERT INTO ProdMilkLog(
+ProdID,
+Ofdate,DateTime,IsMorning,
+Quantity,SNF,WaterP,FAT,
+Price,MilkTypeID,IsKg 
+)
+VALUES('LD1000P002',
+TO_DATE('07/02/2018','DD/MM/YYYY'), 
+TO_TIMESTAMP('07/02/2018 18:04:33','DD/MM/YYYY HH24:MI:SS'),
+'0',
+10,
+8.2,
+NULL,
+5.7,
+32.7,
+1,
+1
+);
+
+
+
+

@@ -1,0 +1,7 @@
+//not for use, just for information
+
+
+ALTER TABLE employee
+MODIFY EmpID int unsigned AUTO_INCREMENT;
+
+ALTER TABLE `HighOfDairy` ADD PRIMARY KEY(`LocalDID`);
